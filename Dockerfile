@@ -4,10 +4,10 @@ FROM $BUILD_FROM
 ENV LANG C.UTF-8
 ENV PIP_ROOT_USER_ACTION=ignore
 
-RUN 'apk add --no-cache \
+RUN apk add --no-cache \
     jq \
-    python3'
-RUN 'pip3 install --upgrade --root-user-action=ignore pip crcmod paho-mqtt'
+    python3
+RUN pip3 install --upgrade --root-user-action=ignore pip crcmod paho-mqtt
 #RUN apk add --no-cache python3
 #RUN ""
 #FROM homeassistant/home-assistant
