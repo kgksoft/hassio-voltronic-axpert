@@ -5,7 +5,7 @@ ENV LANG C.UTF-8
 
 RUN apk add --update --no-cache jq
 RUN apk add --update --no-cache python3
-RUN "/usr/bin/python3 -m pip install --upgrade crcmod paho-mqtt"
+RUN "pip install --no-python-version-warning crcmod paho-mqtt"
 #&& python3 -m ensurepip           \
 #&& pip3 install crcmod paho-mqtt
 #RUN python3 -m ensurepip
