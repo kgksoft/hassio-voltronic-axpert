@@ -4,7 +4,7 @@ FROM $BUILD_FROM
 ENV LANG C.UTF-8
 ENV PIP_ROOT_USER_ACTION=ignore
 
-RUN /bin/ash -c 'apk add --no-cache \
+RUN 'apk add --no-cache \
     jq \
     python3 \
     \
