@@ -6,9 +6,11 @@ import json
 import os
 import time
 
+import sys
+sys.path.append('/usr/lib/python3.11/site-packages')
+
 import crcmod
 import paho.mqtt.client as mqtt
-
 
 BATTERY_TYPES = {
     "0": "AGM",
