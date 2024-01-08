@@ -8,7 +8,7 @@ RUN 'apk add --no-cache \
     jq \
     python3 \
     \
-    && pip3 install --upgrade --root-user-action=ignore pip crcmod paho-mqtt;'
+    && pip3 install --upgrade --root-user-action=ignore pip crcmod paho-mqtt'
 #RUN apk add --no-cache python3
 #RUN ""
 #FROM homeassistant/home-assistant
