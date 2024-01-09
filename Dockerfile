@@ -10,10 +10,10 @@ ARG BUILD_ARCH
 
 RUN apk add --no-cache \
     jq \
-    python3-dev \
+    python3 \
     py3-pip
-RUN "pip3 install --upgrade --root-user-action=ignore --no-cache-dir pip paho-mqtt"
-RUN "pip3 install --upgrade --root-user-action=ignore --no-cache-dir crcmod"
+#RUN "pip3 install --upgrade --root-user-action=ignore --no-cache-dir pip paho-mqtt"
+#RUN "pip3 install --upgrade --root-user-action=ignore --no-cache-dir crcmod"
 #RUN "pip3 install --upgrade --root-user-action=ignore pip crcmod paho-mqtt"
 #RUN apk add --no-cache python3
 #RUN ""
