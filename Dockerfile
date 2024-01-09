@@ -22,7 +22,9 @@ RUN apk add --no-cache \
 #&& python3 -m ensurepip           \
 #&& pip3 install crcmod paho-mqtt
 #RUN python3 -m ensurepip
-#RUN pip3 install crcmod paho-mqtt
+#RUN pip3 install crcmod paho-mqtt\
+
+RUN pip install --upgrade --root-user-action=ignore --no-cache-dir --break-system-packages crcmod pip paho-mqtt
 
 COPY run.sh monitor.py /
 

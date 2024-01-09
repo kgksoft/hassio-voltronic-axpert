@@ -29,6 +29,4 @@ echo "  SLEEP_QUERY: $SLEEP_QUERY"
 echo "  SLEEP_INTERVAL: $SLEEP_INTERVAL"
 echo ""
 
-pip3 install --upgrade --root-user-action=ignore --no-cache-dir crcmod pip paho-mqtt
-
 ./monitor.py
